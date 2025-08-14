@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #FFF4E4;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF4E4;
+    padding-bottom: 20px;
+}
+
+.hero{
+    margin-top: 20px;
+    align-content: center;
+    background-color: #FFF4E4;
+    justify-content: center;
+}
+
+h1::before{
+    display: flex;
+    content: "This text is made with before";
+    color: #FF57BB;
+    font-weight: bold;
+}
+
+h1::after{
+    display: flex;
+    content: "And this one is after";
+    color: #FF57BB;
+    font-weight: lighter;
+}
+
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    font-size: 40px;
+    background-color: #FFF4E4;
+}
+
+.list{
+    background-color: #FFF4E4;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF4E4;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.two{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF4E4;
+}
+
+footer{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: tomato;
+}
+
+.buttonwrapper{
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.brr{
+    color: blue;
+    background-color: transparent;
+    border: 0;
+}
+
+footer button{
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: lightgray;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+footer::button:hover{
+    background: dodgerblue;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+footer button:hover {
+    background: dodgerblue;   
+    color: white;             
+    transform: scale(1.05);   
+}
+
+.effect1{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px 0;
+    background: none;
+    border: 2px solid #333;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.effect1::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #ff6b6b;
+    transition: height 0.3s ease;
+    z-index: -1;
+}
+
+.effect1:hover::after{
+    height: 100%;
+}
+
+.effect1:hover{
+    color: #ffffff;
+    background-color: black;
+}
+
+.whoop{
+    font-size: xx-large;
+    display: flex;
+    flex-direction: column;
+    margin-right: 70%;
+}
+
+p::before{
+    content: "like dummy lost";
+    display: flex;
+    font-size: xx-small;
+    color: #ff6b6b;
+}
+
+p::after{
+    content: "But it shows more before and after, just other sizes :)";
+    display: flex;
+    font-size: x-small;
+    color: #ff6b6b;
+}
+
+.whoopi{
+    display: flex;
+    flex-direction: column;
+    margin-left: 70%;
+    font-size: xx-large;
+}
+
+.whoopie{
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;    
+}
+
+.nth1{
+    display: flex;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    position: relative;
+}
+.nth2{
+    display: flex;
+    margin-top: 10px;
+}
+
+.nth3{
+    display: flex;
+    margin-top: 5px;
+}
+
+.childproofingcontainer ul:nth-child(1) {
+    display: flex;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+
+.nth1:hover::after {
+    content: "get boxed idiot";
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid black;
+    padding: 5px;
+    top: -30px;
+    left: 0;
+    cursor: pointer;
+}
+
+.nth1:hover ~ .nth2{
+    transform: translateX(-150px);
+    transition: transform 0.3s ease;
+}
+
+.nth1:hover ~ .nth3 {
+    transform: translateX(150px);
+    transition: transform 0.3s ease;
+}
